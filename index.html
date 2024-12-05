@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KEYTRIX - Typing Speed Test</title>
+  <link rel="stylesheet" href="KEYTRIX.css">
+</head>
+<body>
+  <canvas id="particles"></canvas>
+
+  <div class="container">
+    <!-- Main Header and Subtitle -->
+    <h1 id="main-header" style="color: #8a2be2;">KEYTRIX</h1>
+    <p id="subtitle">Typing Speed Tester</p>
+
+    <!-- Instructions -->
+    <p class="instructions">Type the given text as quickly and accurately as possible!</p>
+
+    <!-- Typing Test Box -->
+    <div class="test-box">
+      <p id="display-text"></p>
+      <textarea id="input-box" placeholder="Start typing here..." disabled></textarea>
+      <button id="done-btn" class="hidden">Done</button>
+    </div>
+
+    <!-- Stats Section -->
+    <div class="stats">
+      <p><strong>Time Left:</strong> <span id="timer">60</span>s</p>
+      <p><strong>WPM:</strong> <span id="wpm">0</span></p>
+      <p><strong>Accuracy:</strong> <span id="accuracy">100</span>%</p>
+    </div>
+
+    <!-- Buttons -->
+    <button id="start-btn">Start Test</button>
+    <button id="restart-btn" class="hidden">Restart</button>
+    <button id="done-btn" class="hidden">Done</button>
+
+    <!-- Popup Container for Results -->
+    <div id="result-popup" class="popup hidden">
+      <div class="popup-content">
+        <h2>Test Results</h2>
+        <p><strong>WPM:</strong> <span id="popup-wpm">0</span></p>
+        <p><strong>Accuracy:</strong> <span id="popup-accuracy">100</span>%</p>
+        <p><strong>Typing Score:</strong> <span id="popup-score">0</span></p>
+        <button id="close-popup">Close</button>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <h6>This project is developed by Mahendran S @2024</h6>
+  </div>
+
+  <!-- Scripts -->
+  <script src="KEYTRIX.js"></script>
+  <script src="particles.js"></script>
+</body>
+</html>
